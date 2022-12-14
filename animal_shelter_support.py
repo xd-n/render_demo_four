@@ -10,6 +10,7 @@ df["intake_time"] = df["intake_time"].dt.hour
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Analytics Dashboard of Dallas Animal Shelter (Dash Plotly)", style={"textAlign":"center"}),
