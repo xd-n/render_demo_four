@@ -3,7 +3,8 @@ import plotly.express as px
 import pandas as pd
 
 # Data: https://www.dallasopendata.com/Services/Animals-Inventory/qgg6-h4bd
-df = pd.read_csv("https://raw.githubusercontent.com/Coding-with-Adam/Dash-by-Plotly/master/Analytic_Web_Apps/Excel_to_Dash_Animal_Shelter/Animals_Inventory.csv")
+#df = pd.read_csv("https://raw.githubusercontent.com/Coding-with-Adam/Dash-by-Plotly/master/Analytic_Web_Apps/Excel_to_Dash_Animal_Shelter/Animals_Inventory.csv")
+df = pd.read_csv('Animals_Inventory.csv')
 df["intake_time"] = pd.to_datetime(df["intake_time"])
 df["intake_time"] = df["intake_time"].dt.hour
 
